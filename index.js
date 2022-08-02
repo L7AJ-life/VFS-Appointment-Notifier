@@ -7,12 +7,12 @@ const config = require("./config.json");
     defaultViewport: null,
   });
   const page = await browser.newPage();
-  await page.goto('https://visa.vfsglobal.com/can/en/nld/login');
+  await page.goto('https://row4.vfsglobal.com/NetherlandsAppointment/Account/RegisteredLogin?q=shSA0YnE4pLF9Xzwon/x/GAZMwphNakm2hstnNbT9MeeIMxQ284VVU8CmQHTuVDj6RdcTCMqElpit5BM4ux0VE1qp9briBHUp2f3a3FAZaU=');
 
   // Login Page
   await page.waitForSelector("#mat-input-0");
-  await page.type("#mat-input-0", config.username);
-  await page.type("#mat-input-1", config.password);
+  await page.type("#mat-input-0", config.contact.mveglobal@gmail.com);
+  await page.type("#mat-input-1", config.0123456789As!);
   await page.click("button.mat-button-base");
   await page.waitForNavigation();
 
